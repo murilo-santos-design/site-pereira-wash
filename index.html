@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pereira Premium Wash - Estética Automotiva de Alta Qualidade. Oferecemos lavagem completa, polimento, vitrificação e higienização interna.">
+    <title>Pereira Premium Wash | Estética Automotiva</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <!-- Efeito de Fundo Global blur -->
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <!-- Navegação Superior -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-car-burst text-accent"></i>
+                <span>Pereira <span class="text-light">Premium Wash</span></span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#inicio" class="nav-link active">Início</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#estetica" class="nav-link">Estética Automotiva</a>
+                <a href="#higienizacao" class="nav-link">Higienização</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+
+            <a href="https://api.whatsapp.com/send?phone=5500000000000&text=Olá! Gostaria de agendar um serviço na Pereira Premium Wash." target="_blank" class="btn-primary desktop-only">
+                <i class="fa-brands fa-whatsapp"></i> Agendar Agora
+            </a>
+
+            <!-- Menu Mobile Hamburger -->
+            <button class="menu-toggle" aria-label="Abrir Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content" data-aos="fade-up">
+                    <div class="badge-premium">
+                        <i class="fa-solid fa-star"></i> Estética Automotiva de Excelência
+                    </div>
+                    <h1 class="hero-title">O detalhe que<br> seu carro <span class="text-gradient">merece.</span></h1>
+                    <p class="hero-subtitle">Lavagem, Polimento e Higienização Premium com produtos de altíssima qualidade. Cuidamos do seu veículo como se fosse nosso.</p>
+                    <div class="hero-actions">
+                        <a href="#servicos" class="btn-primary btn-large">Ver Serviços</a>
+                        <a href="#galeria" class="btn-secondary btn-large"><i class="fa-solid fa-play"></i> Nossa Qualidade</a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Satisfação Garantida</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">Premium</span>
+                            <span class="stat-label">Produtos de Alta Performance</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="image-wrapper glass-panel">
+                        <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=1740&auto=format&fit=crop" alt="Carro esportivo brilhando após lavagem premium" class="hero-img">
+                        <div class="floating-card rating-card">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>Serviço Impecável!</p>
+                        </div>
+                        <div class="floating-card service-card">
+                            <i class="fa-solid fa-spray-can-sparkles text-accent"></i>
+                            <p>Proteção Cerâmica</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Serviços - Lavagens -->
+        <section id="servicos" class="services-section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Nossas <span class="text-gradient">Lavagens</span></h2>
+                    <p class="section-description">O cuidado essencial para manter a beleza e a valorização do seu veículo.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Serviço 1 -->
+                    <div class="service-card-premium glass-panel" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-droplet car-icon text-accent"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-name">Lavagem de Manutenção</h3>
+                            <p class="service-desc">Limpeza externa, secagem e aspiração interna básica. Ideal para o dia a dia.</p>
+                            <div class="service-footer">
+                                <span class="service-price">R$ 80,00</span>
+                                <a href="#" class="btn-text">Agendar <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Serviço 2 -->
+                    <div class="service-card-premium glass-panel highlight-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="popular-badge">Mais Pedido</div>
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-car-wash car-icon text-accent"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-name">Lavagem Completa</h3>
+                            <p class="service-desc">Inclui limpeza de rodas, aplicação de pretinho e limpeza detalhada do painel.</p>
+                            <div class="service-footer">
+                                <span class="service-price">R$ 170,00</span>
+                                <a href="#" class="btn-text">Agendar <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Serviço 3 -->
+                    <div class="service-card-premium glass-panel" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-layer-group car-icon text-accent"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-name">Lavagem de Chassi</h3>
+                            <p class="service-desc">Essencial para veículos que rodam em regiões de terra ou litoral (previne corrosão).</p>
+                            <div class="service-footer">
+                                <span class="service-price">R$ 200,00</span>
+                                <a href="#" class="btn-text">Agendar <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Estética e Proteção -->
+        <section id="estetica" class="protection-section alt-bg">
+            <div class="container container-flex">
+                <div class="protection-visual" data-aos="fade-right">
+                    <div class="glass-panel" style="padding: 1.5rem; display: inline-block;">
+                        <img src="gol.jpg" alt="Carro em serviço de estética e proteção" class="rounded-image" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                    </div>
+                </div>
+                <div class="protection-content" data-aos="fade-left">
+                    <div class="section-header">
+                        <h2 class="section-title">Estética e <span class="text-gradient">Proteção</span></h2>
+                        <p class="section-description">Tratamentos avançados para restaurar e proteger o brilho da pintura do seu veículo contra ações do tempo.</p>
+                    </div>
+
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="feature-text">
+                                <h4>Enceramento Técnico <span>R$ 180,00</span></h4>
+                                <p>Proteção da pintura com ceras de carnaúba ou sintéticas de alta durabilidade.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-regular fa-lightbulb"></i></div>
+                            <div class="feature-text">
+                                <h4>Polimento de Faróis <span>R$ 70,00</span></h4>
+                                <p>Recupera a transparência de faróis amarelados e riscados, melhorando a iluminação.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-spray-can"></i></div>
+                            <div class="feature-text">
+                                <h4>Descontaminação de Pintura <span>R$ 140,00</span></h4>
+                                <p>Remoção de impurezas (seiva de árvore, piche) que a lavagem comum não tira, deixando a lataria perfeitamente lisa.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-gem"></i></div>
+                            <div class="feature-text">
+                                <h4>Vitrificação ou Selantes <span>R$ 200,00</span></h4>
+                                <p>Tratamentos de longa duração (coasting cerâmico) para proteção máxima da cor, brilho e repelência à água.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Higienização Interna -->
+        <section id="higienizacao" class="services-section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Higienização <span class="text-gradient">Interna</span></h2>
+                    <p class="section-description">Respire ar limpo e sinta o conforto de um interior renovado e livre de ácaros e bactérias.</p>
+                </div>
+
+                <div class="services-grid grid-3">
+                    <div class="service-card-premium glass-panel" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1549646876-0f37bc39e262?q=80&w=1740&auto=format&fit=crop" alt="Limpeza de Couro" class="card-img-top">
+                        <div class="service-content">
+                            <h3 class="service-name">Limpeza e Hidratação de Couro</h3>
+                            <p class="service-desc">Fundamental para carros premium. Previne ressecamento e rachaduras, devolvendo a maciez.</p>
+                            <div class="service-footer">
+                                <span class="service-price">R$ 180,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card-premium glass-panel" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1588693895995-bb0ef2ffb4f0?q=80&w=1742&auto=format&fit=crop" alt="Higienização de Estofados" class="card-img-top">
+                        <div class="service-content">
+                            <h3 class="service-name">Higienização de Estofados</h3>
+                            <p class="service-desc">Lavagem a seco profunda de bancos de tecido para remover manchas, sujeiras impregnadas e odores.</p>
+                            <div class="service-footer">
+                                <span class="service-price">R$ 190,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card-premium glass-panel" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="https://images.unsplash.com/photo-1552390757-9fb2b5df0195?q=80&w=1727&auto=format&fit=crop" alt="Oxi-sanitização Ar Condicionado" class="card-img-top">
+                        <div class="service-content">
+                            <h3 class="service-name">Oxi-sanitização</h3>
+                            <p class="service-desc">Uso de gerador de ozônio para eliminar completamente fungos, bactérias e cheiros fortes como cigarro e mofo.</p>
+                            <div class="service-footer">
+                                <span class="service-price">R$ 90,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Serviços Especiais -->
+        <section id="especiais" class="special-services bg-pattern">
+            <div class="container container-flex reverse-mobile">
+                <div class="protection-content" data-aos="fade-right">
+                    <div class="section-header">
+                        <h2 class="section-title">Serviços <span class="text-gradient">Especiais</span></h2>
+                        <p class="section-description">Cuidado técnico focado em áreas específicas que exigem atenção redobrada.</p>
+                    </div>
+
+                    <div class="feature-list">
+                        <div class="feature-item highlight-feature">
+                            <div class="feature-icon"><i class="fa-solid fa-engine"></i><i class="fa-solid fa-gears"></i></div>
+                            <div class="feature-text">
+                                <h4>Lavagem de Motor Técnica <span>R$ 300,00</span></h4>
+                                <p>Feita detalhadamente com produtos dielétricos e pincéis específicos. Evitamos jatos de água de alta pressão para garantir a segurança dos componentes eletrônicos e sensíveis do seu carro.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-couch"></i></div>
+                            <div class="feature-text">
+                                <h4>Impermeabilização de Bancos <span>R$ 190,00</span></h4>
+                                <p>Cria uma barreira invisível que protege o tecido contra o derramamento acidental de líquidos e o acúmulo de sujeira diária.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contato" class="btn-primary mt-4">Agendar Serviço Especial</a>
+                </div>
+                <div class="protection-visual" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1883&auto=format&fit=crop" alt="Cuidado especial com motor de carro" class="border-glow-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to action/Contato -->
+        <section id="contato" class="cta-section">
+            <div class="container">
+                <div class="cta-box glass-panel" data-aos="zoom-in">
+                    <div class="cta-content">
+                        <h2>Pronto para transformar seu carro?</h2>
+                        <p>Agende agora mesmo e garanta o melhor tratamento estético automotivo da região. Seu carro merece a qualidade Pereira Premium Wash.</p>
+                    </div>
+                    <div class="cta-actions">
+                        <a href="https://api.whatsapp.com/send?phone=5500000000000&text=Olá! Gostaria de agendar um serviço na Pereira Premium Wash." target="_blank" class="btn-whatsapp btn-large">
+                            <i class="fa-brands fa-whatsapp"></i> Falar via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">
+                    <i class="fa-solid fa-car-burst text-accent"></i>
+                    <span>Pereira <span class="text-light">Premium Wash</span></span>
+                </a>
+                <p class="footer-desc">A estética automotiva definitiva para os amantes de carros. Qualidade, confiança e perfeição em cada detalhe.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Lavagens</a></li>
+                    <li><a href="#estetica">Estética e Proteção</a></li>
+                    <li><a href="#higienizacao">Higienização</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contato & Localização</h3>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> Av. Principal, 1000 - Centro, Cidade - UF</li>
+                    <li><i class="fa-brands fa-whatsapp"></i> (00) 90000-0000</li>
+                    <li><i class="fa-regular fa-clock"></i> Seg a Sex: 08h às 18h | Sáb: 08h às 14h</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Pereira Premium Wash. Todos os direitos reservados.</p>
+                <p class="developer-credit">Desenvolvido com excelência.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script de Animação (AOS) via CDN para revelar elementos no scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
