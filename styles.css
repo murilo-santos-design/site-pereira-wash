@@ -1294,3 +1294,11 @@ section {
     50% { transform: scale(1.1); }
     100% { transform: scale(1); }
 }
+
+/* ===== NEW LOGO BADGE STYLE (OPTION 1) ===== */
+.logo { gap: 1.2rem !important; font-size: 1.6rem !important; transition: var(--transition-fast) !important; }
+.logo i { font-size: 1.6rem !important; color: var(--clr-accent) !important; background: var(--glass-bg) !important; width: 48px !important; height: 48px !important; display: flex !important; align-items: center !important; justify-content: center !important; border-radius: 12px !important; border: 1px solid var(--clr-accent-glow) !important; box-shadow: 0 4px 15px rgba(0, 210, 255, 0.15) !important; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.25) !important; }
+.logo:hover i { transform: scale(1.05) translateY(-2px) !important; box-shadow: 0 8px 25px rgba(0, 210, 255, 0.3) !important; border-color: var(--clr-accent) !important; }
+.logo:hover span { color: #fff !important; }
+@media (max-width: 768px) { .logo { font-size: 1.3rem !important; gap: 0.8rem !important; max-width: 75% !important; } .logo i { font-size: 1.3rem !important; width: 40px !important; height: 40px !important; border-radius: 10px !important; } }
+@media (max-width: 480px) { .logo { font-size: 1.1rem !important; gap: 0.6rem !important; } .logo i { font-size: 1.1rem !important; width: 34px !important; height: 34px !important; border-radius: 8px !important; } }
