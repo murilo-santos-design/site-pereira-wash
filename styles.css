@@ -1295,10 +1295,11 @@ section {
     100% { transform: scale(1); }
 }
 
-/* ===== NEW LOGO GLOW STYLE (OPTION 2) ===== */
-.logo { gap: 1rem !important; font-size: 1.8rem !important; transition: var(--transition-fast) !important; }
-.logo i { font-size: 2.2rem !important; color: var(--clr-accent) !important; background: transparent !important; width: auto !important; height: auto !important; display: inline-block !important; border: none !important; box-shadow: none !important; filter: drop-shadow(0 0 12px rgba(0, 210, 255, 0.6)) !important; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.25) !important; }
-.logo:hover i { transform: scale(1.15) rotate(-5deg) !important; filter: drop-shadow(0 0 25px rgba(0, 210, 255, 0.9)) !important; }
-.logo:hover span { text-shadow: 0 0 10px rgba(255, 255, 255, 0.2) !important; }
-@media (max-width: 768px) { .logo { font-size: 1.3rem !important; gap: 0.6rem !important; max-width: 75% !important; } .logo i { font-size: 1.6rem !important; } }
-@media (max-width: 480px) { .logo { font-size: 1.1rem !important; } .logo i { font-size: 1.4rem !important; } }
+/* ===== NEW LOGO ANIMATED GRADIENT STYLE (OPTION 3) ===== */
+.logo { gap: 1rem !important; transition: var(--transition-fast) !important; }
+.logo i { font-size: 2.2rem !important; color: var(--clr-accent) !important; background: transparent !important; width: auto !important; height: auto !important; display: inline-block !important; border: none !important; box-shadow: none !important; filter: none !important; transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.25) !important; }
+.logo span { font-size: 1.8rem !important; font-weight: 800 !important; background: linear-gradient(to right, #ffffff 0%, var(--clr-accent) 50%, #ffffff 100%); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: shine 3s linear infinite; }
+@keyframes shine { to { background-position: 200% center; } }
+.logo:hover i { transform: scale(1.15) translateX(3px) !important; }
+@media (max-width: 768px) { .logo { gap: 0.6rem !important; max-width: 75% !important; } .logo i { font-size: 1.6rem !important; } .logo span { font-size: 1.3rem !important; } }
+@media (max-width: 480px) { .logo i { font-size: 1.4rem !important; } .logo span { font-size: 1.1rem !important; } }
