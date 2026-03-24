@@ -63,4 +63,50 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 6. Feedback visual ao clicar em links externos/WhatsApp
+    const whatsappLinks = document.querySelectorAll('a[href*="whatsapp.com"], a[href*="api.whatsapp.com"], a[href*="wa.me"]');
+    
+    whatsappLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const href = this.getAttribute('href');
+            const target = this.getAttribute('target') || '_self';
+            
+            // Verifica se um overlay já existe, e remove
+            let existingOverlay = document.querySelector('.redirect-overlay');
+            if(existingOverlay) existingOverlay.remove();
+            
+            // Criar overlay
+            const overlay = document.createElement('div');
+            overlay.className = 'redirect-overlay';
+            overlay.innerHTML = `
+                <div class="redirect-content">
+                    <i class="fa-brands fa-whatsapp redirect-icon pulse"></i>
+                    <h3>Redirecionando...</h3>
+                    <p>Abrindo o WhatsApp para atendimento.</p>
+                </div>
+            `;
+            document.body.appendChild(overlay);
+            
+            // Animar entrada
+            setTimeout(() => {
+                overlay.classList.add('active');
+            }, 10);
+
+            // Redirecionar após ~1.2 segundos
+            setTimeout(() => {
+                if(target === '_blank') {
+                    window.open(href, '_blank');
+                    // Remover overlay logo depois de abrir
+                    setTimeout(() => {
+                        overlay.classList.remove('active');
+                        setTimeout(() => overlay.remove(), 300);
+                    }, 500);
+                } else {
+                    window.location.href = href;
+                }
+            }, 1200);
+        });
+    });
 });
