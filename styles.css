@@ -457,10 +457,16 @@ section {
 .logo-title {
     font-size: 1.45rem;
     font-weight: 800;
-    color: var(--clr-text-main);
     line-height: 1;
     letter-spacing: 1px;
     text-transform: uppercase;
+    background: linear-gradient(to right, #ffffff 0%, var(--clr-accent) 50%, #ffffff 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: shine 3s linear infinite;
 }
 
 .logo-subtitle {
@@ -1336,3 +1342,6 @@ section {
 }
 
 
+
+
+@keyframes shine { to { background-position: 200% center; } }
