@@ -433,7 +433,7 @@ section {
 }
 
 .logo i {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
 }
 
 .logo-text {
@@ -443,18 +443,20 @@ section {
 }
 
 .logo-title {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: 800;
     color: var(--clr-text-main);
-    line-height: 1;
+    line-height: 0.95;
+    letter-spacing: -0.5px;
 }
 
 .logo-subtitle {
-    font-size: 0.85rem;
-    font-weight: 300;
-    color: var(--clr-text-main);
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--clr-text-muted);
     line-height: 1.2;
-    letter-spacing: 0.05em;
+    letter-spacing: 2.5px;
+    margin-top: 2px;
     text-transform: uppercase;
 }
 
