@@ -426,14 +426,36 @@ section {
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--clr-text-main);
+    /* font-size: 1.5rem; */
+    /* font-weight: 700; */
+    /* color: var(--clr-text-main); */
     text-decoration: none;
 }
 
 .logo i {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--clr-text-main);
+    line-height: 1;
+}
+
+.logo-subtitle {
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: var(--clr-text-main);
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 .nav-links {
