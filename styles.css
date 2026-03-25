@@ -388,6 +388,12 @@ section {
     gap: 1.5rem;
 }
 
+.nav-socials {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
 /* Redes Sociais da Header Dinâmicas */
 .social-icon {
     display: inline-flex;
@@ -1143,6 +1149,7 @@ section {
 
 @media (max-width: 768px) {
     .nav-links, .desktop-only { display: none !important; }
+    .nav-socials { margin-left: auto; margin-right: 1rem; }
     .menu-toggle { display: block !important; }
     
     .logo {
