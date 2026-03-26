@@ -31,6 +31,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Fechar menu ao redimensionar (opcional, mas evita bugs visuais)
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            menuToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+        }
+    });
+
     // 4. Fechar Menu Mobile ao clicar em um link
     const links = document.querySelectorAll('.nav-link');
     links.forEach(link => {
@@ -45,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     window.addEventListener('scroll', () => {
         let current = '';
-        const scrollPosition = window.scrollY + 200; // Offset para ativação
+        const scrollPosition = window.scrollY + 100; // Offset reduzido para melhor precisão
 
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
