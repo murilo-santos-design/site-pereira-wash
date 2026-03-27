@@ -443,6 +443,13 @@ section {
 
 .logo i {
     font-size: 2.2rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.25);
+}
+
+.logo:hover i {
+    transform: rotate(-15deg) scale(1.2);
+    filter: drop-shadow(0 0 12px var(--clr-accent-glow));
+    color: #fff;
 }
 
 .logo-text {
