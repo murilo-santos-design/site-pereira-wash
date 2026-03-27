@@ -117,4 +117,27 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1200);
         });
     });
+
+    // Lógica do Botão Voltar ao Topo
+    const backToTopBtn = document.getElementById('backToTop');
+    if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backToTopBtn.classList.add('active');
+            } else {
+                backToTopBtn.classList.remove('active');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', (e) => {
+            const href = backToTopBtn.getAttribute('href');
+            if (href.includes('#inicio')) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    }
 });
