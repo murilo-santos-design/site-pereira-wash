@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-    padding: 8rem 0;
+    padding: 6rem 0;
     position: relative;
 }
 
@@ -543,10 +543,10 @@ section {
 
 /* ===== HERO SECTION ===== */
 .hero-section {
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
-    padding-top: 8rem;
+    padding-top: 7rem;
 }
 
 .hero-container {
@@ -603,7 +603,7 @@ section {
 .hero-actions {
     display: flex;
     gap: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .hero-trust-bar {
@@ -611,8 +611,8 @@ section {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-top: 5rem;
-    padding: 2.5rem 3.5rem;
+    margin-top: 3rem;
+    padding: 2.2rem 3rem;
     background: var(--glass-bg);
     backdrop-filter: var(--glass-blur);
     -webkit-backdrop-filter: var(--glass-blur);
