@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nossa Qualidade - Assista aos vídeos dos serviços Pereira Premium Wash.">
+    <title>Nossa Qualidade | Pereira Premium Wash</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="styles.css?v=9">
+    <style>
+        .video-placeholder-section {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10rem;
+        }
+
+        .video-box {
+            width: 100%;
+            max-width: 900px;
+            padding: 5rem 2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .play-icon-large {
+            font-size: 5rem;
+            color: var(--clr-accent);
+            text-shadow: 0 0 30px var(--clr-accent-glow);
+            animation: pulseIcon 2s infinite;
+        }
+
+        .video-box h2 {
+            font-size: 2.2rem;
+            max-width: 700px;
+            line-height: 1.4;
+        }
+
+        .btn-back {
+            margin-top: 2rem;
+        }
+
+        @keyframes pulseIcon {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.8; }
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <!-- Efeito de Fundo Global blur -->
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <!-- Navegação Superior -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-car-burst text-accent"></i>
+                <div class="logo-text">
+                    <span class="logo-title">Pereira</span>
+                    <span class="logo-subtitle">Premium Wash</span>
+                </div>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="index.html#servicos" class="nav-link">Serviços</a>
+                <a href="index.html#estetica" class="nav-link">Estética Automotiva</a>
+                <a href="index.html#higienizacao" class="nav-link">Higienização</a>
+                <a href="index.html#contato" class="nav-link">Contato</a>
+            </nav>
+
+            <div class="nav-socials desktop-nav-socials">
+                <a href="https://instagram.com/" target="_blank" class="social-icon instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://facebook.com/" target="_blank" class="social-icon facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+
+            <div class="header-actions desktop-only">
+                <a href="https://api.whatsapp.com/send?phone=5500000000000&text=Olá! Gostaria de agendar um serviço na Pereira Premium Wash." target="_blank" class="btn-primary">
+                    <i class="fa-brands fa-whatsapp"></i> Agendar Agora
+                </a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Abrir Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="video-placeholder-section">
+            <div class="container">
+                <div class="video-box glass-panel" data-aos="zoom-in">
+                    <i class="fa-solid fa-circle-play play-icon-large"></i>
+                    <h2 class="text-gradient">Aqui estara o vídeo falando sobre a qualidade e explicando os tipos de serviço.</h2>
+                    <p class="section-description">Estamos preparando um conteúdo exclusivo para mostrar cada detalhe da nossa excelência automotiva.</p>
+                    <a href="index.html" class="btn-secondary btn-back">
+                        <i class="fa-solid fa-arrow-left"></i> Voltar ao Início
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo footer-logo">
+                    <i class="fa-solid fa-car-burst text-accent"></i>
+                    <div class="logo-text">
+                        <span class="logo-title">Pereira</span>
+                        <span class="logo-subtitle">Premium Wash</span>
+                    </div>
+                </a>
+                <p class="footer-desc">A estética automotiva definitiva para os amantes de carros. Qualidade, confiança e perfeição em cada detalhe.</p>
+                <div class="social-links">
+                    <a href="https://instagram.com/" target="_blank" class="social-icon instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com/" target="_blank" class="social-icon facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html#servicos">Lavagens</a></li>
+                    <li><a href="index.html#estetica">Estética e Proteção</a></li>
+                    <li><a href="index.html#higienizacao">Higienização</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contato & Localização</h3>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> Av. Principal, 1000 - Centro, Cidade - UF</li>
+                    <li><i class="fa-brands fa-whatsapp"></i> (00) 90000-0000</li>
+                    <li><i class="fa-regular fa-clock"></i> Seg a Sex: 08h às 18h | Sáb: 08h às 14h</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Pereira Premium Wash. Todos os direitos reservados.</p>
+                <p class="developer-credit">Desenvolvido com excelência.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script de Animação (AOS) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=5500000000000&text=Olá! Gostaria de agendar um serviço na Pereira Premium Wash." target="_blank" class="floating-whatsapp" aria-label="Fale conosco no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</body>
+</html>
